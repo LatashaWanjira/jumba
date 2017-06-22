@@ -1,0 +1,114 @@
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0 50px;
+}
+
+.landing-page {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../images/f3-1.jpg");
+  padding: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* navbar */
+
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0;
+  text-transform: uppercase;
+  border: 0;
+  margin: 0;
+  padding: 5px 0;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.navbar-default:hover {
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+
+/* Title */
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: black;
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+
+/* Link */
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: black;
+}
+
+
+/* Mobile version */
+
+.navbar-default .navbar-toggle {
+  border-color: #DDD;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #DDD;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #777;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #333;
+  }
+}
+
+.home-products {}
+
+.home-products .product {
+  text-align: center;
+  padding: 0;
+}
+
+.product-image {
+  /*border: 0.5px solid grey;*/
+  padding-top: 50px;
+  min-height: 220px;
+  max-height: 220px;
+  /*background-color: #CCC;*/
+}
+
+.product-image>img {
+  width: 90%;
+}
+
+.product-image>p {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding-top: 30%;
+  font-size: 20px;
+}
+
+.product-image:hover>p {
+  display: block;
+}
