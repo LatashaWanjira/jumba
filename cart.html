@@ -3,11 +3,11 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Blue Couch | Jumba</title>
+        <title>My Cart | Jumba</title>
         <!-- LINKS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/product.css">
+        <link rel="stylesheet" href="styles/cart.css">
         <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -52,34 +52,44 @@
             <!-- /.container-fluid -->
         </nav>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 product">
-                    <div class="product-image">
-                        <img src="images/couch1.png" alt="">
+            <hr>
+            <h2>Cart</h2>
+            <hr>
+            <div class="cart-items">
+                <div class="row">
+                    <div class="col-md-4 product-image">
+                        <img src="images/table2.png" alt="">
+                    </div>
+                    <div class="col-md-5 product-details">
+                        <h4><a href="product.html">Wooden Shelf</a></h4>
+                        <p>Color: Dark Brown</p>
+                        <p>Number: 1</p>
+                    </div>
+                    <div class="col-md-3 product-price">
+                        <p>Kshs. 12,000</p>
+                        <button type="button" name="button">Remove</button>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <h2>Product Details</h2>
-                    <p>Lorem ipsum dolor sit amet, eum iriure impetus ut. Omittantur concludaturque eos te. Quem molestie scaevola an eam, feugiat debitis invidunt an sea. Ea quodsi offendit adolescens vel. Ut volumus detraxit nec, sale harum incorrupte
-                        nam no. Dicit praesent efficiantur per et, an pri eius scripta.</p>
-                    <p>Per numquam incorrupte in, est eu doctus disputationi, ne semper doctus vis. Modus forensibus et nam. Has ei ignota facilisi, dico legimus civibus eum te. Nihil deseruisse vim te, vim an modo sanctus. No ius vocibus molestiae, in nec
-                        salutatus definitines.</p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 product-image">
+                        <img src="images/couch2.png" alt="">
+                    </div>
+                    <div class="col-md-5 product-details">
+                        <h4><a href="product.html">Cream Sofa</a></h4>
+                        <p>Color: Cream</p>
+                        <p>Number: 1</p>
+                    </div>
+                    <div class="col-md-3 product-price">
+                        <p>Kshs. 30,000</p>
+                        <button type="button" name="button">Remove</button>
+                    </div>
+                    <hr>
                 </div>
-                <div class="col-md-3">
-                    <h3>Order</h3>
-                    <form class="form-group">
-                        <label for="">Add To Cart</label>
-                        <input type="number" value="1">
-                    </form>
-                    <form class="form-group">
-
-                        <label for="">Color</label>
-                        <br>
-                        <input type="radio" name="colour" value="Black" checked>Black<br>
-                        <input type="radio" name="colour" value="Blue">Blue<br>
-                        <input type="radio" name="colour" value="White">White
-                    </form>
-                    <button type="button" name="button">Add To Cart</button>
+                <div class="row total">
+                    <h5>TOTAL: Kshs.42,000</h5>
+                    <button type="button" name="button">Continue Shopping</button>
+                    <button type="button" name="button">Checkout</button>
                 </div>
             </div>
             <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
