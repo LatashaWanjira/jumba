@@ -32,7 +32,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="#">Log In / Register</a></li>
                         <li><a href="#"><span class="fa fa-search"></span></a></li>
                         <li><a href="cart.html">Cart</a></li>
@@ -51,49 +51,55 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <div class="container-fluid">
-            <hr>
-            <h2>Cart</h2>
-            <hr>
-            <div class="cart-items">
-                <div class="row">
-                    <div class="col-md-4 product-image">
-                        <img src="images/table2.png" alt="">
-                    </div>
-                    <div class="col-md-5 product-details">
-                        <h4><a href="product.html">Wooden Shelf</a></h4>
-                        <p>Color: Dark Brown</p>
-                        <p>Number: 1</p>
-                    </div>
-                    <div class="col-md-3 product-price">
-                        <p>Kshs. 12,000</p>
-                        <button type="button" name="button">Remove</button>
-                    </div>
-                </div>
+        <div class="content">
+
+            <div class="container-fluid">
                 <hr>
-                <div class="row">
-                    <div class="col-md-4 product-image">
-                        <img src="images/couch2.png" alt="">
-                    </div>
-                    <div class="col-md-5 product-details">
-                        <h4><a href="product.html">Cream Sofa</a></h4>
-                        <p>Color: Cream</p>
-                        <p>Number: 1</p>
-                    </div>
-                    <div class="col-md-3 product-price">
-                        <p>Kshs. 30,000</p>
-                        <button type="button" name="button">Remove</button>
+                <h2>Cart</h2>
+                <hr>
+                <div class="cart-items">
+                    <div class="row">
+                        <div class="col-md-4 product-image">
+                            <img src="images/table2.png" alt="">
+                        </div>
+                        <div class="col-md-5 product-caption">
+                            <h4><a href="product.html">Wooden Shelf</a></h4>
+                            <p>Color: Dark Brown</p>
+                            <p>Number: 1</p>
+                        </div>
+                        <div class="col-md-3 product-price">
+                            <p>Kshs. 12,000</p>
+                            <button type="button" class="btn remove">Remove</button>
+                        </div>
                     </div>
                     <hr>
-                </div>
-                <div class="row total">
-                    <h5>TOTAL: Kshs.42,000</h5>
-                    <button type="button" name="button">Continue Shopping</button>
-                    <button type="button" name="button">Checkout</button>
+                    <div class="row">
+                        <div class="col-md-4 product-image">
+                            <img src="images/couch2.png" alt="">
+                        </div>
+                        <div class="col-md-5 product-caption">
+                            <h4><a href="product.html">Cream Sofa</a></h4>
+                            <p>Color: Cream</p>
+                            <p>Number: 1</p>
+                        </div>
+                        <div class="col-md-3 product-price">
+                            <p>Kshs. 30,000</p>
+                            <button type="button" class="btn remove">Remove</button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row total">
+                        <h5>TOTAL: Kshs.42,000</h5>
+                        <button type="button" class="btn"><a href="index.html">Continue Shopping</a></button>
+                        <button type="button" class="btn">Checkout</button>
+                    </div>
                 </div>
             </div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
         </div>
+        <footer>
+            <h5> &#169 Jumba <script type="text/javascript"> document.write(new Date().getFullYear());</script></h5>
+        </footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     </body>
 
 </html>
