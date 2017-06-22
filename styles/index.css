@@ -54,6 +54,26 @@
 }
 
 
+/*navbar dropdown stretched across the screen*/
+
+
+/*.nav>li.dropdown.open {
+  position: static;
+}
+
+.nav>li.dropdown.open .dropdown-menu {
+  display: table;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.dropdown-menu>li {
+  display: table-cell;
+}*/
+
+
 /* Mobile version */
 
 .navbar-default .navbar-toggle {
@@ -86,18 +106,18 @@
   padding: 0;
 }
 
-.home-products>.product-image {
+.home-products .product-image {
   border: 0.5px solid #A9A9A9;
   padding-top: 50px;
   min-height: 220px;
   max-height: 220px;
 }
 
-.home-products>.product-image>img {
+.home-products .product-image>img {
   width: 90%;
 }
 
-.home-products>.product-image>p {
+.product-image>p {
   visibility: visible;
   opacity: 0;
   position: absolute;
@@ -115,7 +135,7 @@
   transition: all 500ms;
 }
 
-.home-products>.product-image:hover>p {
+.product-image:hover>p {
   visibility: visible;
   opacity: 1;
   -webkit-transition: all 500ms;
@@ -124,7 +144,7 @@
   transition: all 500ms;
 }
 
-.home-products>.product-caption>h4>a {
+.product-caption>h4>a {
   color: black;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
@@ -132,7 +152,7 @@
   transition: all 500ms;
 }
 
-.home-products>.product-caption>h4>a:hover {
+.product-caption>h4>a:hover {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -o-transition: all 500ms;

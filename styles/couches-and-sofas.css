@@ -1,0 +1,24 @@
+body {
+  padding-top: 70px;
+}
+
+.category-products {
+  text-align: center;
+  padding: 0;
+}
+
+.category-products .product-image {
+  border: 0.5px solid #A9A9A9;
+  padding-top: 40px;
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.category-products .product-image>img {
+  width: 90%;
+}
+
+.view-more {
+  padding-top: 50px;
+  text-align: center;
+}
