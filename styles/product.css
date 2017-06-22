@@ -1,0 +1,12 @@
+body {
+  padding-top: 100px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product>.product-image>img {
+  padding-top: 70px;
+  width: 90%;
+}

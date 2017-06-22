@@ -77,27 +77,29 @@
   }
 }
 
-.home-products {}
+.navbar-fixed-top.scrolled {
+  background-color: rgb(255, 255, 255);
+}
 
-.home-products .product {
+.home-products {
   text-align: center;
   padding: 0;
 }
 
-.product-image {
-  /*border: 0.5px solid grey;*/
+.home-products>.product-image {
+  border: 0.5px solid #A9A9A9;
   padding-top: 50px;
   min-height: 220px;
   max-height: 220px;
-  /*background-color: #CCC;*/
 }
 
-.product-image>img {
+.home-products>.product-image>img {
   width: 90%;
 }
 
-.product-image>p {
-  display: none;
+.home-products>.product-image>p {
+  visibility: visible;
+  opacity: 0;
   position: absolute;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.7);
@@ -107,8 +109,49 @@
   height: 80%;
   padding-top: 30%;
   font-size: 20px;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
 }
 
-.product-image:hover>p {
-  display: block;
+.home-products>.product-image:hover>p {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.home-products>.product-caption>h4>a {
+  color: black;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.home-products>.product-caption>h4>a:hover {
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+}
+
+#myBtn:hover {
+  transition: all 300ms linear;
 }
